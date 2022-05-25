@@ -41,6 +41,9 @@
 </head>
 <body>
 <h1>danh sách</h1>
+<form action="customers">
+            <input type="text" name="key">
+            <button>Search</button>
 <table>
     <tr>
         <td>
@@ -63,15 +66,16 @@
                     ${cus.age}
             </td>
             <td>
-                <a href="/ProductServlet?action=edit&id=${sanPham.id}">Sửa</a>,
-                <a href="/ProductServlet?action=delete&id=${sanPham.id}">Xóa</a>,
-                <a href="/ProductServlet?action=view&id=${sanPham.id}">Xem</a>
+                <a href="/customers?action=view&id=${cus.id}">Xem</a>,
+                <a href="/customers?action=edit&id=${cus.id}">Sửa</a>,
+                <a href="/customers?action=delete&id=${cus.id}">Xóa</a>
             </td>
 
         </tr>
 
     </c:forEach>
 </table>
+</form>
 
 </body>
 </html>
