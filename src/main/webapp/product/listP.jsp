@@ -102,7 +102,7 @@
 
 <div class="featured container no-gutter">
     <form class="row form-group" action="products">
-        <input type="text" class=" col-4 form-control" name="key♠">
+        <input type="text" class=" col-4 form-control" name="">
         <button class="col-1 btn btn-danger">Tìm kiếm</button>
     </form>
     <div class="row posts">

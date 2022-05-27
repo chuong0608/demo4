@@ -6,6 +6,6 @@
 </head>
 <body>
 <a href="/customers">Vào đê</a>
-<a href="/products">Vào product</a>
+<a href="">Vào product</a>
 </body>
 </html>
