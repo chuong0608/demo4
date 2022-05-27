@@ -8,8 +8,8 @@ public interface GenaraDAO<T> {
 
     public T findById(int id);
 
-    public List<T> findAll();
-    public List<T> findByName(String key);
+    public List<T> findAll() throws SQLException;
+    public List<T>findByName(String key);
 
     public boolean delete(int id) throws SQLException;
 

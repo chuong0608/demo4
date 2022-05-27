@@ -47,13 +47,13 @@
 <table>
     <tr>
         <td>
-            <a href="/customers?action=create">Tạo mới sản phẩm</a>
+            <a href="/customers?action=create">Tạo mới</a>
         </td>
     </tr>
     <tr>
         <th>id</th>
         <th>name</th>
-        <th>price</th>
+        <th>age</th>
         <th>select</th>
     </tr>
     <c:forEach items="${dsKH}" var="cus">

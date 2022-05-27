@@ -11,8 +11,11 @@
     <title>Title</title>
 </head>
 <body>
-<input type="text" name="name">
-<input type="text" name="age">
-<button>Sửa nhá</button>
+<form method="post">
+    <input type="text" name="name" value="${KHCanSua.name}">
+    <input type="text" name="age" value="${KHCanSua.age}">
+    <button>Sửa nhá</button>
+</form>
+
 </body>
 </html>

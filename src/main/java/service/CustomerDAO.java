@@ -107,14 +107,17 @@ public class CustomerDAO implements ICustomerDAO{
 
     @Override
     public boolean update(Customer customer) throws SQLException {
+        boolean rowUpdated = false;
         try (Connection connection = getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement("update customer set name = ? , age =  ? where id = ?")) {
             preparedStatement.setString(1, customer.getName());
             preparedStatement.setInt(2,customer.getAge());
+            preparedStatement.setInt(3,customer.getId());
             preparedStatement.executeUpdate();
+            rowUpdated = preparedStatement.executeUpdate() > 0;
         } catch (SQLException e) {
             System.out.println(e.getMessage());
         }
-        return false;
+        return rowUpdated;
     }
 }
